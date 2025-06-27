@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "author": "vortex",
+      "title": "My New Post 1",
+      "content": "当访问令牌（Access Token）过期后，系统需要有一套机制来确保用户既能继续访问资源，又不会降低安全性。以下是常见的处理流程和解决方案：\n\n---\n\n### **核心处理流程：双令牌机制（Access Token + Refresh Token）**\n\n这是最主流、最安全的解决方案（OAuth 2.0 标准推荐）。系统在用户首次认证时返回 **两个令牌**：\n\n1. **访问令牌 (Access Token)**：\n\n- 有效期短（如 15分钟 ~ 2小时），用于访问受保护资源。\n\n- **过期后无法直接使用**，需用刷新令牌获取新访问令牌。\n\n2. **刷新令牌 (Refresh Token)**：\n\n- 有效期长（如 7天 ~ 90天），**仅用于获取新的访问令牌**。\n\n- 存储在安全位置（如 HttpOnly Cookie 或 App 安全存储），**不会随常规 API 请求发送**。",
+      "views": 88,
+      "likes": 66,
+      "createdAt": 1750949029788,
+      "updatedAt": 1750949029788
+    },
+    {
+      "id": "2",
+      "author": "vortex",
+      "title": "My New Post 2",
+      "content": "当访问令牌（Access Token）过期后，系统需要有一套机制来确保用户既能继续访问资源，又不会降低安全性。以下是常见的处理流程和解决方案：\n\n---\n\n### **核心处理流程：双令牌机制（Access Token + Refresh Token）**\n\n这是最主流、最安全的解决方案（OAuth 2.0 标准推荐）。系统在用户首次认证时返回 **两个令牌**：\n\n1. **访问令牌 (Access Token)**：\n\n- 有效期短（如 15分钟 ~ 2小时），用于访问受保护资源。\n\n- **过期后无法直接使用**，需用刷新令牌获取新访问令牌。\n\n2. **刷新令牌 (Refresh Token)**：\n\n- 有效期长（如 7天 ~ 90天），**仅用于获取新的访问令牌**。\n\n- 存储在安全位置（如 HttpOnly Cookie 或 App 安全存储），**不会随常规 API 请求发送**。",
+      "views": 88,
+      "likes": 66,
+      "createdAt": 1750949029788,
+      "updatedAt": 1750949029788
+    },
+    {
+      "id": "3",
+      "author": "vortex",
+      "title": "My New Post 3",
+      "content": "当访问令牌（Access Token）过期后，系统需要有一套机制来确保用户既能继续访问资源，又不会降低安全性。以下是常见的处理流程和解决方案：\n\n---\n\n### **核心处理流程：双令牌机制（Access Token + Refresh Token）**\n\n这是最主流、最安全的解决方案（OAuth 2.0 标准推荐）。系统在用户首次认证时返回 **两个令牌**：\n\n1. **访问令牌 (Access Token)**：\n\n- 有效期短（如 15分钟 ~ 2小时），用于访问受保护资源。\n\n- **过期后无法直接使用**，需用刷新令牌获取新访问令牌。\n\n2. **刷新令牌 (Refresh Token)**：\n\n- 有效期长（如 7天 ~ 90天），**仅用于获取新的访问令牌**。\n\n- 存储在安全位置（如 HttpOnly Cookie 或 App 安全存储），**不会随常规 API 请求发送**。",
+      "views": 88,
+      "likes": 66,
+      "createdAt": 1750949029788,
+      "updatedAt": 1750949029788
+    }
+  ],
+  "replys": [
+    {
+      "id": "1",
+      "post_id": "1",
+      "author": "cassdie",
+      "content": "a comment about post 1",
+      "createdAt": 1750949029798,
+      "likes": 66
+    }
+  ]
+}
