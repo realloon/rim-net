@@ -1,15 +1,11 @@
 <script setup lang="ts">
-const { createdAt, updatedAt } = defineProps<{
-  author: string
-  title: string
-  content: string
-  views: number
-  likes: number
-  createdAt: number
-  updatedAt: number
-}>()
+import type { Post } from '~/types'
 
-const relativeTime = computed(() => formatRelativeTime(new Date(createdAt)))
+const { createdAt, updatedAt } = defineProps<Post>()
+
+const relativeTime = computed(() =>
+  formatRelativeTime(new Date(createdAt))
+)
 </script>
 
 <template>
@@ -40,7 +36,7 @@ const relativeTime = computed(() => formatRelativeTime(new Date(createdAt)))
       <Button>
         <template #icon>
           <Icon name="mdi:chat-outline" size="16px" />
-          <span class="number">{{ views }}</span>
+          <span class="number">{{ chats }}</span>
         </template>
       </Button>
     </footer>
