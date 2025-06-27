@@ -9,17 +9,16 @@ const { createdAt, updatedAt } = defineProps<{
   updatedAt: number
 }>()
 
-const formater = Intl.DateTimeFormat('zh', { dateStyle: 'short' })
-const date = computed(() => formater.format(createdAt))
+const relativeTime = computed(() => formatRelativeTime(new Date(createdAt)))
 </script>
 
 <template>
   <article>
     <header>
       <Avatar />
-      <span>{{ author }}</span>
-      <span>dot</span>
-      <time datetime="">{{ date }}</time>
+      <span class="author">{{ author }}</span>
+      <span class="dot"></span>
+      <time :datetime="createdAt.toString()">{{ relativeTime }}</time>
       <Spacer />
       <button>...</button>
     </header>
@@ -41,6 +40,19 @@ article
 header {
   display: flex;
   align-items: center;
-  gap: 1em;
+  gap: 0.5em;
+
+  .author {
+    font-weight: bold;
+  }
+
+  .dot {
+    display: inline-block;
+    background: #000;
+    width: 4px;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    transform: translateY(0.05em);
+  }
 }
 </style>
