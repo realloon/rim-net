@@ -15,9 +15,11 @@ const isPreviewMode = computed(() => !params.id)
   <article @click="isPreviewMode && navigateTo(`/posts/${id}`)">
     <header>
       <Avatar />
-      <span class="author">{{ author }}</span>
-      <span class="dot"></span>
-      <time :datetime="createdAt.toString()">{{ relativeTime }}</time>
+      <div>
+        <span class="author">{{ author }}</span>
+        <span class="dot"></span>
+        <time :datetime="createdAt.toString()">{{ relativeTime }}</time>
+      </div>
       <Spacer />
       <Button text round>
         <template #icon>
@@ -66,17 +68,28 @@ header {
   align-items: center;
   gap: 0.5em;
 
-  .author {
-    font-weight: bold;
-  }
+  div {
+    display: flex;
+    align-items: baseline;
+    gap: 0.5em;
 
-  .dot {
-    display: inline-block;
-    background: #000;
-    width: 4px;
-    aspect-ratio: 1 / 1;
-    border-radius: 50%;
-    transform: translateY(0.05em);
+    .author {
+      font-weight: bold;
+    }
+
+    .dot,
+    time {
+      opacity: 0.7;
+    }
+
+    .dot {
+      display: inline-block;
+      background: #000;
+      width: 4px;
+      aspect-ratio: 1 / 1;
+      border-radius: 50%;
+      transform: translateY(-0.25em);
+    }
   }
 }
 
