@@ -14,13 +14,22 @@ const isPreviewMode = computed(() => !params.id)
 <template>
   <article @click="isPreviewMode && navigateTo(`/posts/${id}`)">
     <header>
+      <Button class="back-button" @click="$router.back()" text round>
+        <template #icon>
+          <Icon name="mdi:arrow-left" />
+        </template>
+      </Button>
+
       <Avatar />
+
       <div>
         <span class="author">{{ author }}</span>
         <span class="dot"></span>
         <time :datetime="createdAt.toString()">{{ relativeTime }}</time>
       </div>
+
       <Spacer />
+
       <Button text round>
         <template #icon>
           <Icon name="mdi:dots-horizontal" />
