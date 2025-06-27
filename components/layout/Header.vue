@@ -15,7 +15,13 @@
     </nav>
 
     <section>
-      <NuxtLink to="/new">Create</NuxtLink>
+      <NuxtLink to="/new">
+        <Button round>
+          <template #icon>
+            <Icon name="mdi:add" />
+          </template>
+        </Button>
+      </NuxtLink>
     </section>
   </header>
 </template>
