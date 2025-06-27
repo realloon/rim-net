@@ -6,10 +6,13 @@ const { createdAt, updatedAt } = defineProps<Post>()
 const relativeTime = computed(() =>
   formatRelativeTime(new Date(createdAt))
 )
+
+const { params } = useRoute()
+const isPreviewMode = computed(() => !params.id)
 </script>
 
 <template>
-  <article>
+  <article @click="isPreviewMode && navigateTo(`/posts/${id}`)">
     <header>
       <Avatar />
       <span class="author">{{ author }}</span>
