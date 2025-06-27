@@ -14,7 +14,13 @@ const isPreviewMode = computed(() => !params.id)
 <template>
   <article @click="isPreviewMode && navigateTo(`/posts/${id}`)">
     <header>
-      <Button class="back-button" @click="$router.back()" text round>
+      <Button
+        v-if="!isPreviewMode"
+        class="back-button"
+        @click="$router.back()"
+        text
+        round
+      >
         <template #icon>
           <Icon name="mdi:arrow-left" />
         </template>
