@@ -20,13 +20,30 @@ const relativeTime = computed(() => formatRelativeTime(new Date(createdAt)))
       <span class="dot"></span>
       <time :datetime="createdAt.toString()">{{ relativeTime }}</time>
       <Spacer />
-      <button>...</button>
+      <Button text round>
+        <template #icon>
+          <Icon name="mdi:dots-horizontal" />
+        </template>
+      </Button>
     </header>
 
     <h1>{{ title }}</h1>
     <Markdown class="content" :markdown="content" />
-    <button>Like {{ likes }}</button>
-    <button>chats {{ views }}</button>
+
+    <footer>
+      <Button>
+        <template #icon>
+          <Icon name="mdi:heart-outline" size="16px" />
+          <span class="number">{{ likes }}</span>
+        </template>
+      </Button>
+      <Button>
+        <template #icon>
+          <Icon name="mdi:chat-outline" size="16px" />
+          <span class="number">{{ views }}</span>
+        </template>
+      </Button>
+    </footer>
   </article>
 </template>
 
@@ -34,7 +51,15 @@ const relativeTime = computed(() => formatRelativeTime(new Date(createdAt)))
 article
 /* temp */ {
   max-width: 600px;
-  outline: 1px dashed gray;
+}
+
+article:not(:last-child)::after 
+/* temp */ {
+  content: '';
+  display: block;
+  height: 1px;
+  background-color: #e1e1e2;
+  margin-block: 8px;
 }
 
 header {
@@ -53,6 +78,18 @@ header {
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     transform: translateY(0.05em);
+  }
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  .number {
+    font-size: 0.875em;
+    font-weight: bold;
+    font-family: monospace;
   }
 }
 </style>
