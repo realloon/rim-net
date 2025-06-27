@@ -1,16 +1,20 @@
 <script lang="ts" setup></script>
 
 <template>
-  <div class="avatar"></div>
+  <div class="avatar">
+    <Icon name="mdi:account" size="16px" />
+  </div>
 </template>
 
-<style>
+<style scoped>
 .avatar {
-  box-sizing: border-box;
-  width: 28px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
   aspect-ratio: 1 / 1;
-  border: 1px solid #e5e8eb;
-  background-color: #e4abff;
   border-radius: 50%;
+  background-color: plum;
 }
 </style>
