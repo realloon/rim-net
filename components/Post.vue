@@ -69,15 +69,6 @@ article
   max-width: 600px;
 }
 
-article:not(:last-child)::after 
-/* temp */ {
-  content: '';
-  display: block;
-  height: 1px;
-  background-color: #e1e1e2;
-  margin-block: 8px;
-}
-
 header {
   display: flex;
   align-items: center;
