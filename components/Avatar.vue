@@ -2,7 +2,7 @@
 
 <template>
   <div class="avatar">
-    <Icon name="mdi:account" size="16px" />
+    <Icon name="mdi:account" size="20px" />
   </div>
 </template>
 
@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 24px;
+  width: 32px;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   background-color: plum;
