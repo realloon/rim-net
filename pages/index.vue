@@ -10,9 +10,7 @@ const sortedPosts = computed(
 <template>
   <h1>首页</h1>
   <section class="post-list" aria-label="post-list">
-    <template v-for="post in sortedPosts">
-      <Post class="post" v-bind="{ ...post }" />
-    </template>
+    <Post v-for="post in sortedPosts" class="post" v-bind="{ ...post }" />
   </section>
 </template>
 
