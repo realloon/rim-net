@@ -67,9 +67,27 @@
       "postId": "1",
       "parentCommentId": null,
       "author": "cassdie",
-      "content": "a comment about post 1",
+      "content": "ahaha",
       "createdAt": 1750949029798,
       "likes": 66
+    },
+    {
+      "id": "2",
+      "postId": "1",
+      "parentCommentId": "1",
+      "author": "joy",
+      "content": "a comment about post 1",
+      "createdAt": 1750949129798,
+      "likes": 12
+    },
+    {
+      "id": "3",
+      "postId": "1",
+      "parentCommentId": null,
+      "author": "bill",
+      "content": "hello, maybe i am human.",
+      "createdAt": 1750949229798,
+      "likes": 33
     }
   ]
 }
