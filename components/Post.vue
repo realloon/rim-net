@@ -13,35 +13,11 @@ const isPreviewMode = computed(() => !params.id)
 
 <template>
   <article @click="isPreviewMode && navigateTo(`/posts/${id}`)">
-    <header>
-      <Button
-        v-if="!isPreviewMode"
-        class="back-button"
-        @click="$router.back()"
-        text
-        round
-      >
-        <template #icon>
-          <Icon name="mdi:arrow-left" />
-        </template>
-      </Button>
-
-      <Avatar />
-
-      <div>
-        <span class="author">{{ author }}</span>
-        <span class="dot"></span>
-        <time :datetime="createdAt.toString()">{{ relativeTime }}</time>
-      </div>
-
-      <Spacer />
-
-      <Button text round>
-        <template #icon>
-          <Icon name="mdi:dots-horizontal" />
-        </template>
-      </Button>
-    </header>
+    <UserHeader
+      :author="author"
+      :date="createdAt"
+      :backable="!isPreviewMode"
+    />
 
     <h1>{{ title }}</h1>
     <Markdown class="content" :markdown="content" />
@@ -67,36 +43,6 @@ const isPreviewMode = computed(() => !params.id)
 article
 /* temp */ {
   max-width: 600px;
-}
-
-header {
-  display: flex;
-  align-items: center;
-  gap: 0.5em;
-
-  div {
-    display: flex;
-    align-items: baseline;
-    gap: 0.5em;
-
-    .author {
-      font-weight: bold;
-    }
-
-    .dot,
-    time {
-      opacity: 0.7;
-    }
-
-    .dot {
-      display: inline-block;
-      background: #000;
-      width: 4px;
-      aspect-ratio: 1 / 1;
-      border-radius: 50%;
-      transform: translateY(-0.25em);
-    }
-  }
 }
 
 footer {
