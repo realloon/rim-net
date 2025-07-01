@@ -45,7 +45,7 @@ const relativeTime = computed(() => formatRelativeTime(new Date(date)))
 header {
   display: flex;
   align-items: center;
-  gap: 0.5em;
+  gap: 8px;
 
   div {
     display: flex;

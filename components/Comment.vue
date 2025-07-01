@@ -12,10 +12,14 @@ const relativeTime = computed(() =>
   <article class="comment">
     <UserHeader :author="author" :date="createdAt" />
 
-    {{ content }}
+    <Markdown class="content" :markdown="content" />
 
     <footer></footer>
   </article>
 </template>
 
-<style></style>
+<style scoped>
+.content {
+  padding-left: 40px;
+}
+</style>
