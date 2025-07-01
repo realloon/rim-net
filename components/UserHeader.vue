@@ -33,7 +33,7 @@ const relativeTime = computed(() => formatRelativeTime(new Date(date)))
 
     <Spacer />
 
-    <Button text round>
+    <Button @click.stop text round>
       <template #icon>
         <Icon name="mdi:dots-horizontal" />
       </template>
