@@ -8,14 +8,35 @@ const { createdAt } = defineProps<Comment>()
   <article class="comment">
     <UserHeader :author="userId" :date="createdAt" />
 
-    <Markdown class="content" :markdown="content" />
+    <Markdown class="content" :markdown="content" is-folded />
 
-    <footer></footer>
+    <footer>
+      <Button label="喜欢" text>
+        <template #icon>
+          <Icon name="mdi:cards-heart-outline" size="16px" />
+        </template>
+      </Button>
+
+      <Button label="回复" text>
+        <template #icon>
+          <Icon name="mdi:chat-outline" size="16px" />
+        </template>
+      </Button>
+    </footer>
   </article>
 </template>
 
 <style scoped>
-.content {
+.content,
+footer {
   padding-left: 40px;
+}
+
+.content {
+  margin-block: 8px;
+}
+
+footer {
+  margin-left: -14px;
 }
 </style>

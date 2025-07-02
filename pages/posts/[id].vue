@@ -23,7 +23,7 @@ async function submitHandle() {
     method: 'POST',
     body: {
       postId: params.id as string,
-      author: localStorage.getItem('username') ?? 'unnameed',
+      userId: localStorage.getItem('username') ?? 'unnameed',
       content: comment.value,
       likes: 0,
       createdAt: Date.now(),
@@ -31,7 +31,7 @@ async function submitHandle() {
   })
 
   if (!createdComment) {
-    return alert('评论未回复成功')
+    return alert('评论未评论成功')
   }
 
   comment.value = ''
@@ -46,8 +46,12 @@ async function submitHandle() {
     <textarea v-model="comment" name="comment"></textarea>
     <footer>
       <Spacer />
-      <Button label="取消" />
-      <Button label="回复" />
+      <Button text round>
+        <template #icon>
+          <Icon name="mdi:close" />
+        </template>
+      </Button>
+      <Button label="评论" />
     </footer>
   </form>
 
@@ -64,8 +68,14 @@ async function submitHandle() {
 .comment-editor {
   footer {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     gap: 8px;
   }
+}
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 </style>

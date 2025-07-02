@@ -8,31 +8,34 @@ const isPreviewMode = computed(() => !params.id)
 </script>
 
 <template>
-  <article
-    class="post"
-    @click="isPreviewMode && navigateTo(`/posts/${id}`)"
-  >
+  <article class="post" @click="isPreviewMode && navigateTo(`/posts/${id}`)">
     <UserHeader
       class="header"
       :author="userId"
       :date="createdAt"
       :backable="!isPreviewMode"
-    />
+    >
+      <template #expand>
+        <Button @click.stop text round>
+          <template #icon>
+            <Icon name="mdi:dots-horizontal" />
+          </template>
+        </Button>
+      </template>
+    </UserHeader>
 
     <h1 class="title">{{ title }}</h1>
     <Markdown class="content" :markdown="content" />
 
     <footer>
-      <Button>
+      <Button :label="likes" class="counter">
         <template #icon>
           <Icon name="mdi:heart-outline" size="16px" />
-          <span class="number">{{ likes }}</span>
         </template>
       </Button>
-      <Button>
+      <Button :label="chats" class="counter">
         <template #icon>
           <Icon name="mdi:chat-outline" size="16px" />
-          <span class="number">{{ chats }}</span>
         </template>
       </Button>
     </footer>
@@ -40,8 +43,7 @@ const isPreviewMode = computed(() => !params.id)
 </template>
 
 <style scoped>
-article
-.title {
+article .title {
   font-size: 1.25rem;
   font-weight: bold;
   margin-block: 8px;
@@ -57,11 +59,10 @@ footer {
   gap: 12px;
 
   margin-top: 8px;
+}
 
-  .number {
-    font-size: 0.875em;
-    font-weight: bold;
-    font-family: monospace;
-  }
+.counter {
+  font-family: var(--font-mono);
+  font-weight: bold;
 }
 </style>

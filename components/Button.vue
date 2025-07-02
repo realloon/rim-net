@@ -9,9 +9,7 @@ defineProps<{
 <template>
   <button :class="[text && 'text', round && 'round']">
     <slot name="icon"></slot>
-    <slot>
-      <span v-if="label">{{ label }}</span>
-    </slot>
+    <span v-if="label">{{ label }}</span>
   </button>
 </template>
 
@@ -19,9 +17,9 @@ defineProps<{
 button {
   display: inline-flex;
   align-items: center;
-  gap: 0.25em;
+  gap: 0.5em;
 
-  font-size: 1rem;
+  font-size: 0.875em;
   line-height: 1;
 
   background-color: #e5ebee;
