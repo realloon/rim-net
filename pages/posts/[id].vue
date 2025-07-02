@@ -46,12 +46,12 @@ async function submitHandle() {
     <textarea v-model="comment" name="comment"></textarea>
     <footer>
       <Spacer />
-      <Button text round>
+      <Button type="button" text round>
         <template #icon>
           <Icon name="mdi:close" />
         </template>
       </Button>
-      <Button label="评论" />
+      <Button type="submit" label="评论" />
     </footer>
   </form>
 

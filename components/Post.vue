@@ -1,17 +1,19 @@
 <script setup lang="ts">
-import type { Post } from '~/types'
+import type { Post, User } from '~/types'
 
-const { createdAt, updatedAt } = defineProps<Post>()
+const { id, createdAt, updatedAt } = defineProps<Post>()
 
 const { params } = useRoute()
 const isPreviewMode = computed(() => !params.id)
+
+const { data: user } = useFetch<User>(`http://localhost:9000/users/${id}`)
 </script>
 
 <template>
-  <article class="post" @click="isPreviewMode && navigateTo(`/posts/${id}`)">
+  <article class="post">
     <UserHeader
       class="header"
-      :author="userId"
+      :author="user?.nickname ?? 'Unnamed'"
       :date="createdAt"
       :backable="!isPreviewMode"
     >
@@ -44,7 +46,7 @@ const isPreviewMode = computed(() => !params.id)
 
 <style scoped>
 article .title {
-  font-size: 1.25rem;
+  font-size: 1rem;
   font-weight: bold;
   margin-block: 8px;
 }

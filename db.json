@@ -1,19 +1,51 @@
 {
+  "users": [
+    {
+      "id": "001",
+      "username": "string",
+      "nickname": "王花花",
+      "createdAt": 1720195200000
+    },
+    {
+      "id": "002",
+      "username": "string",
+      "nickname": "赵树",
+      "createdAt": 1720195200000
+    },
+    {
+      "id": "003",
+      "username": "string",
+      "nickname": "李再思",
+      "createdAt": 1720195200000
+    },
+    {
+      "id": "004",
+      "username": "string",
+      "nickname": "林娟",
+      "createdAt": 1720195200000
+    },
+    {
+      "id": "005",
+      "username": "string",
+      "nickname": "葛双蛋",
+      "createdAt": 1720195200000
+    }
+  ],
   "posts": [
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5F6",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "id": "001",
+      "userId": "001",
       "boardId": 1,
       "title": "如何高效管理殖民地电力系统",
-      "content": "分享我的电力管理技巧：\n\n1. **太阳能+电池组合** - 白天存储多余电力\n2. **优先级设置** - 医疗设备永远优先\n```\n// 电路布局示例\n[电池] ↔ [主电网] ↔ [太阳能板]\n```\n> 注意雷击事件！",
+      "content": "分享我的电力管理技巧：\n\n1. **太阳能+电池组合** - 白天存储多余电力\n2. **优先级设置** - 医疗设备永远优先\n```\n// 电路布局示例\n[电池] ↔ [主电网] ↔ [太阳能板]\n```\n> 注意雷击事件！\n\n永和九年，岁在癸丑，暮春之初，会于会稽山阴之兰亭，修禊事也。群贤毕至，少长咸集。此地有崇山峻岭，茂林修竹，又有清流激湍，映带左右,引以为流觞曲水，列坐其次。虽无丝竹管弦之盛，一觞一咏，亦足以畅叙幽情。",
       "likes": 24,
       "chats": 4,
       "createdAt": 1720195200000,
       "updatedAt": 1720198800000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "id": "002",
+      "userId": "002",
       "boardId": 2,
       "title": "新人开荒必备mod推荐",
       "content": "| Mod名称       | 功能描述               | 必备指数 |\n|---------------|------------------------|----------|\n| **Wall Light** | 墙嵌式照明           | ★★★★★    |\n| **RimHUD**     | 增强信息面板         | ★★★★☆    |\n\n[创意工坊合集链接](https://steamcommunity.com/)",
@@ -23,8 +55,8 @@
       "updatedAt": 1720083600000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
+      "id": "003",
+      "userId": "003",
       "boardId": 1,
       "title": "机械族入侵防御布局分享",
       "content": "![防御布局](https://example.com/defense.png)\n\n**核心策略：**\n- 三层自动炮塔防线\n- 利用狭窄通道\n- EMP手雷预备队\n\n`注意自爆机械体！`",
@@ -34,8 +66,8 @@
       "updatedAt": 1719997200000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
+      "id": "004",
+      "userId": "004",
       "boardId": 1,
       "title": "温带森林基地建设指南",
       "content": "**地形选择要点：**\n- 靠近肥沃土壤区\n- 背靠山体天然屏障\n- 避开疾病高发区\n\n> 冬季需准备：\n> - 地热能源\n> - 室内农场\n> - 皮毛储备",
@@ -45,8 +77,8 @@
       "updatedAt": 1719910800000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "id": "005",
+      "userId": "001",
       "boardId": 1,
       "title": "角色特质组合分析",
       "content": "强力组合推荐：\n1. **夜猫子+夜视** - 夜间效率+30%\n2. **快速学习+兴趣专注** - 技能成长×1.5\n\n⚠️ 避免组合：\n- 晕血+神经质\n- 懒惰+贪吃",
@@ -58,123 +90,123 @@
   ],
   "comments": [
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5L2",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5F6",
+      "id": "006",
+      "userId": "002",
+      "postId": "001",
       "content": "建议增加地热发电机，应对连续阴天",
       "likes": 5,
       "createdAt": 1720202400000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5M3",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5F6",
+      "id": "007",
+      "userId": "001",
+      "postId": "001",
       "content": "电路图很清晰！已收藏",
       "likes": 2,
       "createdAt": 1720206000000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5N4",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "id": "008",
+      "userId": "003",
+      "postId": "002",
       "content": "补充一个 **Replace Stuff**，建筑替换神器",
       "likes": 12,
       "createdAt": 1720087200000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5P5",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "id": "009",
+      "userId": "004",
+      "postId": "002",
       "content": "RimHUD确实必备，信息显示优化明显",
       "likes": 8,
       "createdAt": 1720090800000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5Q6",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
-      "parentCommentId": "01H5Z0VKX9W6Y3A4B2C3D4E5P5",
+      "id": "010",
+      "userId": "001",
+      "postId": "002",
+      "parentCommentId": "009",
       "content": "最新版还支持自定义面板布局",
       "likes": 3,
       "createdAt": 1720094400000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5R7",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "id": "011",
+      "userId": "002",
+      "postId": "003",
       "content": "北侧需要加迫击炮，防远程单位",
       "likes": 6,
       "createdAt": 1720000800000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5S8",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "id": "012",
+      "userId": "005",
+      "postId": "003",
       "content": "机械蜈蚣怎么处理？",
       "likes": 1,
       "createdAt": 1720004400000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5T9",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
-      "parentCommentId": "01H5Z0VKX9W6Y3A4B2C3D4E5S8",
+      "id": "013",
+      "userId": "001",
+      "postId": "003",
+      "parentCommentId": "005",
       "content": "用反器材步枪打腿，降低移动速度",
       "likes": 7,
       "createdAt": 1720008000000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5U0",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
+      "id": "014",
+      "userId": "003",
+      "postId": "003",
       "content": "山洞区域注意虫灾风险",
       "likes": 4,
       "createdAt": 1719914400000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5V1",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
+      "id": "015",
+      "userId": "004",
+      "postId": "005",
       "content": "「工作狂+乐观」组合也很实用",
       "likes": 9,
       "createdAt": 1719828000000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5W2",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5F6",
+      "id": "016",
+      "userId": "005",
+      "postId": "001",
       "content": "电路过载问题怎么解决？",
       "likes": 0,
       "createdAt": 1720213200000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5X3",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "id": "017",
+      "userId": "001",
+      "postId": "002",
       "content": "推荐添加 **Pick Up And Haul** 优化搬运逻辑",
       "likes": 6,
       "createdAt": 1720098000000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5Y4",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "id": "018",
+      "userId": "002",
+      "postId": "002",
       "content": "防御通道宽度建议3格，方便集火",
       "likes": 3,
       "createdAt": 1720011600000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5Z5",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
+      "id": "019",
+      "userId": "003",
+      "postId": "004",
       "content": "冬季供暖推荐地热+管道方案",
       "likes": 5,
       "createdAt": 1719921600000
     },
     {
-      "id": "01H5Z0VKX9W6Y3A4B2C3D4E6A6",
-      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
-      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
+      "id": "020",
+      "userId": "004",
+      "postId": "005",
       "content": "「快速学习+神经质」会怎样？",
       "likes": 2,
       "createdAt": 1719835200000

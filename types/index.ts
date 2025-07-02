@@ -1,3 +1,9 @@
+export interface User {
+  id: string
+  username: string
+  nickname: string
+}
+
 export interface Post {
   id: string // 使用 uuid or ulid
   userId: string // 预留用户表 uuid or ulid
