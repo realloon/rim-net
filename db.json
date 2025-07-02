@@ -1,93 +1,183 @@
 {
   "posts": [
     {
-      "id": "1",
-      "author": "张明",
-      "title": "深入理解 React Hooks 原理",
-      "content": "React Hooks 自推出以来彻底改变了函数组件的开发方式。本文将深入剖析 useState、useEffect 等核心 Hook 的实现机制。\n\n首先我们需要理解 Fiber 架构下 Hook 的存储方式，每个函数组件对应一个 fiber 节点，hooks 以链表形式存储在 fiber 的 memoizedState 属性中...",
-      "chats": 2450,
-      "likes": 186,
-      "createdAt": 1750822346022,
-      "updatedAt": 1750822346022
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5F6",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "boardId": 1,
+      "title": "如何高效管理殖民地电力系统",
+      "content": "分享我的电力管理技巧：\n\n1. **太阳能+电池组合** - 白天存储多余电力\n2. **优先级设置** - 医疗设备永远优先\n```\n// 电路布局示例\n[电池] ↔ [主电网] ↔ [太阳能板]\n```\n> 注意雷击事件！",
+      "likes": 24,
+      "chats": 4,
+      "createdAt": 1720195200000,
+      "updatedAt": 1720198800000
     },
     {
-      "id": "2",
-      "author": "李思思",
-      "title": "TypeScript 类型体操实战指南",
-      "content": "TypeScript 的类型系统是图灵完备的！\n\n这意味着我们可以实现各种复杂的类型逻辑。\n\n本文将通过 10 个渐进式案例，带你掌握类型编程的核心技巧：1. 条件类型与 infer 关键字 2. 递归类型处理嵌套结构 3. 模板字面量类型实现字符串操作... 当我们处理深度嵌套的 API 响应类型时，可以使用递归类型实现自动拍平...",
-      "chats": 3120,
-      "likes": 254,
-      "createdAt": 1750712346022,
-      "updatedAt": 1750712346022
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "boardId": 2,
+      "title": "新人开荒必备mod推荐",
+      "content": "| Mod名称       | 功能描述               | 必备指数 |\n|---------------|------------------------|----------|\n| **Wall Light** | 墙嵌式照明           | ★★★★★    |\n| **RimHUD**     | 增强信息面板         | ★★★★☆    |\n\n[创意工坊合集链接](https://steamcommunity.com/)",
+      "likes": 87,
+      "chats": 5,
+      "createdAt": 1720080000000,
+      "updatedAt": 1720083600000
     },
     {
-      "id": "3",
-      "author": "王技术",
-      "title": "2023 年前端性能优化全景图",
-      "content": "在 5G 时代，用户对性能的期望更高。\n\n本文整合了最新的性能优化技术：\n\n1. 使用 Next.js 13 应用路由的流式渲染 \n\n2. 针对 Core Web Vitals 的优化策略 \n\n3. 新的性能指标 INP 解读。实验表明，使用 Partial Prerendering 技术可使 TTI 降低 40%... 需要注意的是，过度优化可能适得其反，应优先解决瓶颈问题...",
-      "chats": 5870,
-      "likes": 421,
-      "createdAt": 1750702346022,
-      "updatedAt": 1750702346022
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
+      "boardId": 3,
+      "title": "机械族入侵防御布局分享",
+      "content": "![防御布局](https://example.com/defense.png)\n\n**核心策略：**\n- 三层自动炮塔防线\n- 利用狭窄通道\n- EMP手雷预备队\n\n`注意自爆机械体！`",
+      "likes": 42,
+      "chats": 3,
+      "createdAt": 1719993600000,
+      "updatedAt": 1719997200000
     },
     {
-      "id": "4",
-      "author": "赵全栈",
-      "title": "Node.js 多线程实战：Worker Threads 深度解析",
-      "content": "虽然 Node.js 以单线程事件循环著称，但 Worker Threads 模块让我们可以突破 CPU 密集型任务的限制。\n\n本文将展示：\n\n1. 如何正确使用 worker_threads 模块 \n\n2. 线程间通信的最佳实践 \n\n3. 与 cluster 模块的对比选择。通过实际压测发现，对于图像处理类任务，使用 4 个工作线程可使吞吐量提升 3.8 倍... 但需要注意线程创建开销和内存隔离问题...",
-      "chats": 1320,
-      "likes": 97,
-      "createdAt": 1701388800000,
-      "updatedAt": 1701388800000
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
+      "boardId": 1,
+      "title": "温带森林基地建设指南",
+      "content": "**地形选择要点：**\n- 靠近肥沃土壤区\n- 背靠山体天然屏障\n- 避开疾病高发区\n\n> 冬季需准备：\n> - 地热能源\n> - 室内农场\n> - 皮毛储备",
+      "likes": 33,
+      "chats": 2,
+      "createdAt": 1719907200000,
+      "updatedAt": 1719910800000
     },
     {
-      "id": "5",
-      "author": "陈设计",
-      "title": "CSS 新特性：@layer 规则彻底改变样式架构",
-      "content": "CSS Cascade Layers 是近年来最重要的 CSS 架构改进。通过 @layer 规则，我们可以：1. 定义明确的样式层级 2. 避免特异性战争 3. 创建可维护的设计系统。实践案例：定义基础层 > 组件层 > 工具层 > 主题层。重要结论：层优先级高于选择器特异性，这意味着 .btn 在工具层将始终覆盖组件层的 #special-button...",
-      "chats": 2780,
-      "likes": 203,
-      "createdAt": 1701388800000,
-      "updatedAt": 1701388800000
-    },
-    {
-      "id": "6",
-      "author": "周AI",
-      "title": "使用 TensorFlow.js 在浏览器中实现实时姿态检测",
-      "content": "Web ML 正在打开浏览器中的新可能。本文将逐步实现：1. 加载预训练的 MoveNet 模型 2. 处理摄像头视频流 3. 解析 17 个关键点数据。关键代码片段：async function detectPose() {\n\nconst model = await poseDetection.createDetector();\n\nconst poses = await model.estimatePoses(video);\n\n// 绘制骨骼连线...\n\n} 性能优化技巧包括降低输入分辨率和使用 WebGL 后端...",
-      "chats": 4310,
-      "likes": 325,
-      "createdAt": 1701388800000,
-      "updatedAt": 1701388800000
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "boardId": 4,
+      "title": "角色特质组合分析",
+      "content": "强力组合推荐：\n1. **夜猫子+夜视** - 夜间效率+30%\n2. **快速学习+兴趣专注** - 技能成长×1.5\n\n⚠️ 避免组合：\n- 晕血+神经质\n- 懒惰+贪吃",
+      "likes": 56,
+      "chats": 1,
+      "createdAt": 1719820800000,
+      "updatedAt": 1719824400000
     }
   ],
   "comments": [
     {
-      "id": "1",
-      "postId": "1",
-      "parentCommentId": null,
-      "author": "cassdie",
-      "content": "ahaha",
-      "createdAt": 1750949029798,
-      "likes": 66
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5L2",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5F6",
+      "content": "建议增加地热发电机，应对连续阴天",
+      "likes": 5,
+      "createdAt": 1720202400000
     },
     {
-      "id": "2",
-      "postId": "1",
-      "parentCommentId": "1",
-      "author": "joy",
-      "content": "a comment about post 1",
-      "createdAt": 1750949129798,
-      "likes": 12
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5M3",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5F6",
+      "content": "电路图很清晰！已收藏",
+      "likes": 2,
+      "createdAt": 1720206000000
     },
     {
-      "id": "3",
-      "postId": "1",
-      "parentCommentId": null,
-      "author": "bill",
-      "content": "hello, maybe i am human.",
-      "createdAt": 1750949229798,
-      "likes": 33
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5N4",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "content": "补充一个 **Replace Stuff**，建筑替换神器",
+      "likes": 12,
+      "createdAt": 1720087200000
+    },
+    {
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5P5",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "content": "RimHUD确实必备，信息显示优化明显",
+      "likes": 8,
+      "createdAt": 1720090800000
+    },
+    {
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5Q6",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "parentCommentId": "01H5Z0VKX9W6Y3A4B2C3D4E5P5",
+      "content": "最新版还支持自定义面板布局",
+      "likes": 3,
+      "createdAt": 1720094400000
+    },
+    {
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5R7",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "content": "北侧需要加迫击炮，防远程单位",
+      "likes": 6,
+      "createdAt": 1720000800000
+    },
+    {
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5S8",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "content": "机械蜈蚣怎么处理？",
+      "likes": 1,
+      "createdAt": 1720004400000
+    },
+    {
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5T9",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "parentCommentId": "01H5Z0VKX9W6Y3A4B2C3D4E5S8",
+      "content": "用反器材步枪打腿，降低移动速度",
+      "likes": 7,
+      "createdAt": 1720008000000
+    },
+    {
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5U0",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
+      "content": "山洞区域注意虫灾风险",
+      "likes": 4,
+      "createdAt": 1719914400000
+    },
+    {
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5V1",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
+      "content": "「工作狂+乐观」组合也很实用",
+      "likes": 9,
+      "createdAt": 1719828000000
+    },
+    {
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5W2",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5F6",
+      "content": "电路过载问题怎么解决？",
+      "likes": 0,
+      "createdAt": 1720213200000
+    },
+    {
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5X3",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5G7",
+      "content": "推荐添加 **Pick Up And Haul** 优化搬运逻辑",
+      "likes": 6,
+      "createdAt": 1720098000000
+    },
+    {
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5Y4",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "content": "防御通道宽度建议3格，方便集火",
+      "likes": 3,
+      "createdAt": 1720011600000
+    },
+    {
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E5Z5",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5H8",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
+      "content": "冬季供暖推荐地热+管道方案",
+      "likes": 5,
+      "createdAt": 1719921600000
+    },
+    {
+      "id": "01H5Z0VKX9W6Y3A4B2C3D4E6A6",
+      "userId": "01H5Z0VKX9W6Y3A4B2C3D4E5J0",
+      "postId": "01H5Z0VKX9W6Y3A4B2C3D4E5K1",
+      "content": "「快速学习+神经质」会怎样？",
+      "likes": 2,
+      "createdAt": 1719835200000
     }
   ]
 }

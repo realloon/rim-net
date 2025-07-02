@@ -14,7 +14,7 @@ const isPreviewMode = computed(() => !params.id)
   >
     <UserHeader
       class="header"
-      :author="author"
+      :author="userId"
       :date="createdAt"
       :backable="!isPreviewMode"
     />

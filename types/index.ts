@@ -1,8 +1,9 @@
 export interface Post {
-  id: string
-  author: string
+  id: string // 使用 uuid or ulid
+  userId: string // 预留用户表 uuid or ulid
+  boardId: number
   title: string
-  content: string
+  content: string // markdown
   likes: number
   chats: number
   createdAt: number
@@ -10,11 +11,11 @@ export interface Post {
 }
 
 export interface Comment {
-  id: string
+  id: string // 使用 uuid or ulid
+  userId: string // 预留
   postId: string
   parentCommentId?: string
-  author: string
-  content: string
+  content: string // markdown
   likes: number
-  createdAt: number
+  createdAt: number // 评论不允许再编辑
 }

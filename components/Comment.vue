@@ -2,15 +2,11 @@
 import type { Comment } from '~/types'
 
 const { createdAt } = defineProps<Comment>()
-
-const relativeTime = computed(() =>
-  formatRelativeTime(new Date(createdAt))
-)
 </script>
 
 <template>
   <article class="comment">
-    <UserHeader :author="author" :date="createdAt" />
+    <UserHeader :author="userId" :date="createdAt" />
 
     <Markdown class="content" :markdown="content" />
 
