@@ -9,17 +9,24 @@ const sortedPosts = computed(
 
 <template>
   <section class="post-list" aria-label="post-list">
-    <Post v-for="post in sortedPosts" class="post" v-bind="{ ...post }" />
+    <Post
+      v-for="post in sortedPosts"
+      @click="navigateTo(`/posts/${post.id}`)"
+      class="post"
+      v-bind="{ ...post }"
+    />
   </section>
 </template>
 
 <style scoped>
-.post:not(:last-of-type)::after 
-/* temp */ {
-  content: '';
-  display: block;
-  height: 1px;
-  background-color: #e1e1e2;
-  margin-block: 8px;
+.post {
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #edeff1;
+  }
 }
 </style>

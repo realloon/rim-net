@@ -6,6 +6,9 @@
 
   --font-sans: system-ui, sans-serif;
   --font-mono: monospace;
+
+  --width-aside: 240px;
+  --height-header: 49px;
 }
 
 body {
@@ -31,4 +34,9 @@ p {
 a {
   color: inherit;
   text-decoration: initial;
+}
+
+ul,
+ol {
+  margin-block: 0;
 }

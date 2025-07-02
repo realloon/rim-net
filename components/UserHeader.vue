@@ -36,7 +36,6 @@ const relativeTime = computed(() => formatRelativeTime(new Date(date)))
     <div>
       <slot name="expand" />
     </div>
-
   </header>
 </template>
 

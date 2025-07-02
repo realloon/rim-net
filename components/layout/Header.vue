@@ -27,7 +27,8 @@ header {
   display: flex;
   align-items: center;
 
-  height: 48px;
+  box-sizing: border-box;
+  height: var(--height-header);
   padding-inline: 24px;
   border-bottom: 1px solid #e5ebee;
 

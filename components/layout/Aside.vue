@@ -29,9 +29,15 @@ aside {
   display: flex;
   flex-direction: column;
 
-  width: max-content;
-  min-width: 160px;
+  position: fixed;
+  left: 0;
+  top: var(--height-header);
+
+  box-sizing: border-box;
+  width: var(--width-aside);
+  height: calc(100vh - var(--height-header));
   padding: 8px 16px;
+  border-right: 1px solid #e5ebee;
 }
 
 ul {
