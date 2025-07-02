@@ -26,11 +26,11 @@
 
 <style scoped>
 aside {
+  flex-shrink: 0;
   display: flex;
   flex-direction: column;
 
-  position: fixed;
-  left: 0;
+  position: sticky;
   top: var(--height-header);
 
   box-sizing: border-box;
