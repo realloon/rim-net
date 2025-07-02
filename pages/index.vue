@@ -8,7 +8,6 @@ const sortedPosts = computed(
 </script>
 
 <template>
-  <h1>首页</h1>
   <section class="post-list" aria-label="post-list">
     <Post v-for="post in sortedPosts" class="post" v-bind="{ ...post }" />
   </section>

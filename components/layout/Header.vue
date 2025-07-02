@@ -2,26 +2,45 @@
 
 <template>
   <header>
-    <h1>header</h1>
-    <nav>
-      <!-- temp -->
-      <ul>
-        <li><NuxtLink to="/">Home</NuxtLink></li>
-        <li><NuxtLink to="/posts/1">Post/1</NuxtLink></li>
-        <li><NuxtLink to="/posts/2">Post/2</NuxtLink></li>
-        <li><NuxtLink to="/posts/3">Post/3</NuxtLink></li>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
-      </ul>
-    </nav>
+    <h1 class="title"><NuxtLink to="/">边缘世界中文论坛</NuxtLink></h1>
 
-    <section>
-      <NuxtLink to="/new">
-        <Button round>
-          <template #icon>
-            <Icon name="mdi:add" />
-          </template>
-        </Button>
-      </NuxtLink>
+    <Spacer />
+
+    <section class="right-wrapper">
+      <Button @click="navigateTo('/new')" round>
+        <template #icon>
+          <Icon name="mdi:add" />
+        </template>
+      </Button>
+
+      <Avatar />
     </section>
   </header>
 </template>
+
+<style scoped>
+header {
+  z-index: 1;
+  position: sticky;
+  top: 0;
+
+  display: flex;
+  align-items: center;
+
+  height: 48px;
+  padding-inline: 24px;
+  border-bottom: 1px solid #e5ebee;
+
+  background-color: #fff;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.right-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+</style>

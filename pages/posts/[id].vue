@@ -62,9 +62,6 @@ async function submitHandle() {
 
 <style scoped>
 .comment-editor {
-  /* tmpl */
-  max-width: 600px;
-
   footer {
     display: flex;
     align-items: baseline;

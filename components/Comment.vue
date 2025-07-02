@@ -19,11 +19,6 @@ const relativeTime = computed(() =>
 </template>
 
 <style scoped>
-.comment
-/* temp */ {
-  max-width: 600px;
-}
-
 .content {
   padding-left: 40px;
 }

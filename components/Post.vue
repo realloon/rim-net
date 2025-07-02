@@ -41,10 +41,6 @@ const isPreviewMode = computed(() => !params.id)
 
 <style scoped>
 article
-/* temp */ {
-  max-width: 600px;
-}
-
 .title {
   font-size: 1.25rem;
   font-weight: bold;

@@ -64,9 +64,6 @@ async function handleSubmit() {
 section {
   display: flex;
   flex-direction: column;
-  /* temp */
-  max-width: 600px;
-  outline: 1px dashed gray;
 }
 
 form {
