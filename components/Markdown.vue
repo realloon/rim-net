@@ -5,5 +5,15 @@ const html = await marked.parse(markdown)
 </script>
 
 <template>
-  <div v-html="html"></div>
+  <div class="parsed-content" v-html="html"></div>
 </template>
+
+<style scoped>
+.parsed-content {
+  line-height: 1.5;
+}
+
+.parsed-content:deep(p) {
+  margin-block: 0;
+}
+</style>

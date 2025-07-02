@@ -3,23 +3,23 @@ import type { Post } from '~/types'
 
 const { createdAt, updatedAt } = defineProps<Post>()
 
-const relativeTime = computed(() =>
-  formatRelativeTime(new Date(createdAt))
-)
-
 const { params } = useRoute()
 const isPreviewMode = computed(() => !params.id)
 </script>
 
 <template>
-  <article @click="isPreviewMode && navigateTo(`/posts/${id}`)">
+  <article
+    class="post"
+    @click="isPreviewMode && navigateTo(`/posts/${id}`)"
+  >
     <UserHeader
+      class="header"
       :author="author"
       :date="createdAt"
       :backable="!isPreviewMode"
     />
 
-    <h1>{{ title }}</h1>
+    <h1 class="title">{{ title }}</h1>
     <Markdown class="content" :markdown="content" />
 
     <footer>
@@ -45,10 +45,22 @@ article
   max-width: 600px;
 }
 
+.title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-block: 8px;
+}
+
+.content {
+  color: var(--color-font-lighter);
+}
+
 footer {
   display: flex;
   align-items: center;
   gap: 12px;
+
+  margin-top: 8px;
 
   .number {
     font-size: 0.875em;
