@@ -3,7 +3,7 @@ import type { Post } from '~/types'
 
 const title = ref('')
 const content = ref('')
-const board = ref('null')
+const boardId = ref(1)
 
 async function handleSubmit() {
   /** Temporary Implementation */
@@ -20,7 +20,8 @@ async function handleSubmit() {
   const createdPost = await $fetch<Post>('http://localhost:9000/posts', {
     method: 'POST',
     body: {
-      author: username,
+      userId: username,
+      boardId: boardId.value,
       title: title.value,
       content: content.value,
       likes: 0,
@@ -42,10 +43,10 @@ async function handleSubmit() {
   <section>
     <h1>发布新帖子</h1>
     <form @submit.prevent="handleSubmit">
-      <select v-model="board" name="board">
-        <option value="null">选择板块</option>
-        <option value="found">发现</option>
-        <option value="mod">模组</option>
+      <select v-model="boardId" name="board">
+        <option :value="1">选择板块</option>
+        <option :value="2">发现</option>
+        <option :value="3">模组</option>
       </select>
 
       <input v-model="title" type="text" name="title" />

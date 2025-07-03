@@ -42,17 +42,18 @@ async function submitHandle() {
 <template>
   <Post v-if="post" v-bind="{ ...post }" />
 
-  <form @submit.prevent="submitHandle" class="comment-editor">
-    <textarea v-model="comment" name="comment"></textarea>
-    <footer>
-      <Spacer />
-      <Button type="button" text round>
-        <template #icon>
-          <Icon name="mdi:close" />
-        </template>
-      </Button>
-      <Button type="submit" label="评论" />
-    </footer>
+  <form class="comment-editor" @submit.prevent="submitHandle">
+    <MarkEditor v-model="comment" name="comment">
+      <template #footer>
+        <Spacer />
+        <Button type="button" text round>
+          <template #icon>
+            <Icon name="mdi:close" />
+          </template>
+        </Button>
+        <Button type="submit" label="评论" />
+      </template>
+    </MarkEditor>
   </form>
 
   <section class="comments">
@@ -66,11 +67,7 @@ async function submitHandle() {
 
 <style scoped>
 .comment-editor {
-  footer {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-  }
+  margin-block: 16px 32px;
 }
 
 .comments {
